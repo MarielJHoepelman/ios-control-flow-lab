@@ -26,6 +26,8 @@ if conditionTwo {
  print("C")
 }
 print("D")
+
+// It prints C and D
 ```
 
 - A
@@ -48,6 +50,8 @@ switch appInfo {
  default:
  print("I'm not quite sure what you are looking at")
 }
+
+// It prints "myCoolApp hasn't released yet."
 ```
 
 - appInfo.0 hasn't released yet
@@ -73,6 +77,8 @@ case is Double:
 default:
  print("D")
 }
+
+//It prints D.
 ```
 
 - A
@@ -96,6 +102,8 @@ case "skittles":
 case "snickers":
  print("Hungry? Grab a Snickers")
 }
+
+// "No default case in the switch statement"
 ```
 
 - No parentheses around the conditions
@@ -112,6 +120,16 @@ Given the current weather conditions (rain, sunny, snow), use a switch statement
 let currentWeather = "rain"
 
 // enter code below
+switch currentWeather {
+case "rain":
+print("It's raining today.")
+case "sunny":
+print("Sun it out and about.")
+case "snow":
+print("Is snowing today, enjoy.")
+default:
+print("The weather is fair.")
+}
 ```
 
 ***
@@ -124,6 +142,8 @@ let firstName = "John"
 let lastName = "Appleseed"
 
 // enter code below
+var fullName = (firstName) + " " + (lastName)
+print("The Fellow's full name is " + String(fullName))
 ```
 
 ***
